@@ -1,2 +1,2 @@
-#!/bin/bas
-printf "%s," $(find . -maxdepth 1 -printf '%f\n' | LC_ALL=C sort -n) | sed 's/,$/\n/'
+#!/bin/bash
+ls -apvm
