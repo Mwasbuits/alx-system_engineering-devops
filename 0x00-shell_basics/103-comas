@@ -1,2 +1,0 @@
-#!/bin/bash
-ls -A1p | LC_ALL=C sort -n | sed -e ':a' -e 'N' -e '$!ba' -e 's/\n/, /g' -e 's/,$/\n/'
