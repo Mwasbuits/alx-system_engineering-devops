@@ -1,3 +1,2 @@
 #!/bin/bash
-find . -maxdepth 1 -printf '%f\n' | LC_ALL=C sort -n | tr '\n' ', ' | sed 's/,$/\n/'
-
+printf "%s," $(find . -maxdepth 1 -printf '%f\n' | LC_ALL=C sort -n) | sed 's/,$/\n/'
