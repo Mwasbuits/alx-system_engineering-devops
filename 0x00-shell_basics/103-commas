@@ -1,2 +1,2 @@
-#!/bin/bash
-printf "%s, " $(find . -maxdepth 1 -printf '%f\n' | LC_ALL=C sort -k1,1n -k1.1,1) | sed 's/\/,/, /; s/,$/\//'
+#!/bin/bas
+printf "%s," $(find . -maxdepth 1 -printf '%f\n' | LC_ALL=C sort -n) | sed 's/,$/\n/'
