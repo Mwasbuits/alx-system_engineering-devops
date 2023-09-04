@@ -1,1 +1,1 @@
-This is my shell directory readme
+0x02-shell_redirections
