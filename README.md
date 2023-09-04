@@ -1,1 +1,1 @@
-This is my shell redirections read me
+0x02-shell_redirections
