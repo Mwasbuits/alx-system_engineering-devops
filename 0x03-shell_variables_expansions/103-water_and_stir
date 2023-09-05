@@ -1,2 +1,2 @@
 #!/bin/bash
-echo "obase=bestchol; ibase=water; $WATER + ibase=stir; $STIR" | bc
+result=$(echo $(( (($(echo "$WATER" | tr -d '[:upper:]' | tr 'abcdefghijklmnopqrstuvwxyz' '0123456789' | sed 's/.\{1\}/&+/g' | sed 's/.$//'))
