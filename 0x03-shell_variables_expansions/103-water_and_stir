@@ -1,2 +1,2 @@
 #!/bin/bash
-python -c "print(int('$WATER', base=16) + int('$STIR', base=16))"
+echo "ibase=water;obase=bestchol;$(echo "$WATER" | tr -d '[:upper:]')" + "ibase=stir;obase=bestchol;$(echo "$STIR" | tr -d '[:upper:]')" | bc
