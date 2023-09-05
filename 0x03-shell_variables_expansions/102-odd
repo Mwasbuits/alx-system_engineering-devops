@@ -1,2 +1,2 @@
 #!/bin/bash
-grep -n "" input.txt | grep -E '^[0-9]*[02468]:'
+cat -n file.txt | grep -E '^[[:space:]]*[0-9]*[02468]:[[:space:]]' | cut -f2-

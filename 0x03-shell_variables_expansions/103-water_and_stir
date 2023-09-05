@@ -1,2 +1,2 @@
 #!/bin/bash
-result=$(echo $(( (($(echo "$WATER" | tr -d '[:upper:]' | tr 'abcdefghijklmnopqrstuvwxyz' '0123456789' | sed 's/.\{1\}/&+/g' | sed 's/.$//'))
+python -c "print(int('$WATER', base=16) + int('$STIR', base=16))"
