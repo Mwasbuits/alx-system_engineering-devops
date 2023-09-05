@@ -1,2 +1,2 @@
 #!/bin/bash
-echo "ibase=water;obase=bestchol;$(echo "$WATER" | tr -d '[:upper:]')" + "ibase=stir;obase=bestchol;$(echo "$STIR" | tr -d '[:upper:]')" | bc
+echo $(printf %o $(($((5#$(echo $WATER | tr 'water' '01234'))) + $((5#$(echo $STIR | tr 'stir.' '01234'))))) | tr '01234567' 'behlnort')
